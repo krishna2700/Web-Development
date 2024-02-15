@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registration Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input,
+      select {
+        margin-bottom: 10px;
+      }
+      details {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>User Registration Form</h2>
+
+    <form action="#" method="post">
+      <!-- Personal Information Section -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required />
+
+      <!-- Country Selection -->
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="" disabled selected>Select your country</option>
+        <option value="USA">United States</option>
+        <option value="Canada">Canada</option>
+        <option value="UK">United Kingdom</option>
+        <option value="Australia">Australia</option>
+        <option value="Germany">Germany</option>
+        <option value="France">France</option>
+        <option value="Japan">Japan</option>
+        <option value="Brazil">Brazil</option>
+        <option value="India">India</option>
+        <option value="South Africa">South Africa</option>
+      </select>
+
+      <!-- Interests -->
+      <label>Interests:</label>
+      <input type="checkbox" id="interest1" name="interest1" value="Reading" />
+      <label for="interest1">Reading</label>
+
+      <input type="checkbox" id="interest2" name="interest2" value="Sports" />
+      <label for="interest2">Sports</label>
+
+      <input
+        type="checkbox"
+        id="interest3"
+        name="interest3"
+        value="Traveling"
+      />
+      <label for="interest3">Traveling</label>
+
+      <input type="checkbox" id="interest4" name="interest4" value="Music" />
+      <label for="interest4">Music</label>
+
+      <input
+        type="checkbox"
+        id="interest5"
+        name="interest5"
+        value="Programming"
+      />
+      <label for="interest5">Programming</label>
+
+      <!-- Password Fields -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <label for="confirm-password">Confirm Password:</label>
+      <input
+        type="password"
+        id="confirm-password"
+        name="confirm-password"
+        required
+      />
+
+      <!-- Terms and Conditions -->
+      <details>
+        <summary>Terms and Conditions</summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+        <label>
+          <input type="checkbox" id="agreement" name="agreement" />
+          I agree to the terms and conditions
+        </label>
+      </details>
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit" disabled />
+    </form>
+  </body>
+</html>
+
+<!-- ! Interactive HTML5 Form Instructions for the Interactive HTML5 Form Exercise:
+Your task is to create a user registration form using only HTML5. This exercise
+will help you understand and implement various form elements and their
+attributes. Follow these guidelines: Personal Information Section: Include
+fields for name, email, and date of birth. Use appropriate input types for each.
+Country Selection: Add a dropdown list for country selection. Include at least
+ten different countries. Interests: Incorporate a minimum of five checkboxes,
+each representing a different interest. Password Fields: Create fields for
+password and password confirmation. Terms and Conditions: Utilize
+<details>
+  and
+  <summary>
+    tags to create a collapsible section containing the terms and conditions,
+    along with a mandatory agreement checkbox. This exercise will sharpen your
+    skills in creating complex HTML forms, understanding input validation, and
+    enhancing user experience with HTML5 elements. Ensure your form is clear,
+    user-friendly, and free from biases in its content and language.
+  </summary>
+</details> -->
