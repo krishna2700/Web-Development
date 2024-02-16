@@ -1,0 +1,130 @@
+{
+  "window.zoomLevel": 6,
+  "workbench.colorTheme": "Night Owl (No Italics)",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "entity.name.tag.html",
+        "settings": {
+          "foreground": "#a70096" // HTML tags set to plum color
+        }
+      },
+
+      {
+        "scope": "entity.name.tag.css",
+        "settings": {
+          "foreground": "#a3e212",
+          "fontStyle": ""
+        }
+      },
+
+      {
+        "scope": "storage.type.js",
+        "settings": {
+          "foreground": "#be0aff",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": "entity.name.tag.js",
+        "settings": {
+          "foreground": "#ffee32" // CSS tags set to a darker green shade
+        }
+      },
+      {
+        "scope": ["entity.name.function.js", "variable.other.object.js"],
+        "settings": {
+          "foreground": "#ffbc42" // JS functions and objects set to a soft red color
+        }
+      },
+      {
+        "scope": [
+          "entity.name.tag.js.jsx",
+          "entity.other.attribute-name.js.jsx",
+          "keyword.control.import.js",
+          "javascript",
+          "variable.other.constant.js"
+        ],
+        "settings": {
+          "foreground": "#f607de" // JSX tags and attributes set to plum color
+        }
+      },
+      {
+        "scope": ["entity.other.attribute-name.js ", "meta.tag.attributes.js"],
+        "settings": {
+          "foreground": "#ee6c4d" // JSX tags and attributes set to plum color
+        }
+      },
+      {
+        "scope": ["variable.other.constant.js"],
+        "settings": {
+          "foreground": "#90e80c" // JSX tags and attributes set to plum color
+        }
+      },
+      {
+        "scope": ["variable.other.readwrite.js"],
+        "settings": {
+          "foreground": "#e80cdd" // JSX tags and attributes set to plum color
+        }
+      },
+      {
+        "scope": ["entity.name.function.js"],
+        "settings": {
+          "foreground": "#90e80c" // JSX tags and attributes set to plum color
+        }
+      },
+      {
+        "scope": ["keyword.operator.assignment.js"],
+        "settings": {
+          "foreground": "#3e15f4"
+        }
+      },
+      {
+        "scope": ["entity.other.attribute-name"],
+        "settings": {
+          "foreground": "#e5f415"
+        }
+      },
+      {
+        "scope": [
+          "keyword.control.export.js",
+          "entity.other.attribute-name.js.jsx",
+          "meta.var.expr.js",
+          "source.js"
+        ],
+        "settings": {
+          "foreground": "#f607de" // JSX tags and attributes set to plum color
+        }
+      },
+      {
+        "scope": ["string.quoted"],
+        "settings": {
+          "foreground": "#006d77" // JSX tags and attributes set to plum color
+        }
+      },
+      {
+        "scope": "entity.name.function.node",
+        "settings": {
+          "foreground": "#58D68D" // Node.js functions set to light green
+        }
+      },
+      {
+        "scope": ["comment", "comment.line.double-slash"],
+        "settings": {
+          "foreground": "#CB4335"
+        }
+      }
+    ]
+  },
+  "editor.wordWrap": "bounded",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.inlineSuggest.enabled": true,
+  "editor.minimap.enabled": false,
+  "tabnine.experimentalAutoImports": true,
+  "workbench.statusBar.visible": false,
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.iconTheme": "vscode-icons",
+  "editor.formatOnSave": true,
+  "json.schemas": [],
+  "vsicons.dontShowNewVersionMessage": true
+}
