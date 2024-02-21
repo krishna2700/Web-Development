@@ -1,0 +1,123 @@
+<!-- Enhancing a Web Page with Advanced CSS Selectors
+
+
+Instructions for Learners
+
+Title: Enhancing a Web Page with Advanced CSS Selectors
+
+In this exercise, you'll be   challenged to apply advanced CSS selectors to style a sample web page. Your goal is to demonstrate your understanding of various CSS selectors and their practical applications in web design. You'll be enhancing the appearance of different elements on the page using specific and nuanced CSS rules.
+
+Objectives:
+
+Apply advanced CSS selectors to style HTML elements.
+
+Understand how sibling, attribute, and pseudo-class selectors work.
+
+Create a web page layout that demonstrates effective use of CSS selectors.
+
+Requirements:
+
+Header Styling:
+
+Use the .header class to style the page header. Set the background color to #333 and the text color to white.
+
+Paragraph Styling After a Header:
+
+Style any paragraph (<p>) that directly follows an <h1> tag. The text should be green and italicized.
+
+List Item Styling:
+
+Target all list items (<li>) within an unordered list (<ul>) except for the first child. These should be colored red.
+
+Paragraph Styling After a List:
+
+Style any paragraph that follows an unordered list. Make the text bold.
+
+Link Styling with Attribute Selector:
+
+Style links (<a> tags) that have a target="_blank" attribute. These links should have a yellow background.
+
+Footer Styling:
+
+Use the .footer class to style the footer. It should have a light gray (#ddd) background, centered text, and be positioned at the bottom of the page. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced CSS Selector Exercise</title>
+    <style>
+      /* Body styling */
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      /* Header styling using class selector */
+      .header {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+
+      /* Styling for links with an attribute selector */
+      a[target="_blank"] {
+        background-color: yellow;
+      }
+
+      /* Styling for paragraphs that are directly after a header */
+      h1 + p {
+        color: green;
+        font-style: italic;
+      }
+
+      /* Styling list items but not the first child */
+      ul li:not(:first-child) {
+        color: red;
+      }
+
+      /* Styling any paragraph that follows a list */
+      ul ~ p {
+        font-weight: bold;
+      }
+
+      /* Hover effect on links using pseudo-class */
+      a:hover {
+        color: blue;
+      }
+
+      /* Footer styling using class selector */
+      .footer {
+        background-color: #ddd;
+        text-align: center;
+        padding: 15px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Welcome to Our Page</h1>
+    </div>
+    <p>This paragraph is styled normally.</p>
+    <h1>Section Header</h1>
+    <p>
+      This paragraph is styled green and italic because it directly follows an
+      H1.
+    </p>
+    <ul>
+      <li>First item (not red)</li>
+      <li>Second item (red)</li>
+      <li>Third item (red)</li>
+    </ul>
+    <p>This paragraph is bold because it follows a list.</p>
+    <a href="#" target="_blank">This is a link (yellow background)</a>
+    <div class="footer">&copy; 2023 Advanced CSS Selectors</div>
+  </body>
+</html>

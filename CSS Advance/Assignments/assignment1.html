@@ -1,0 +1,94 @@
+/* Advanced CSS Selectors Challenge Instructions: Welcome to the "Advanced CSS
+Selectors Challenge." In this exercise, you will apply your knowledge of CSS
+selectors to achieve specific styling on a given HTML document. Your task is to
+modify the css in the <style></style> tag by providing solution to each comment
+inside the style tag to meet the following design requirements: Header Styling:
+Select the page header using its class and set its background color to navy
+blue. Center the text inside the header and change its color to white. Main
+Content Styling: Use the ID selector to increase the font size of the main
+article's heading to 22px. Utilize the class selector to give the highlighted
+paragraph a background color of light yellow and a left padding of 10px. List
+Item Highlight: Target the first item in the unordered list within the sidebar
+and bold its text using the child combinator. Use the pseudo-class selector to
+change the color of the last list item to dark grey. Footer Styling: Directly
+select the footer element and set the text to align at the center. Ensure that
+the footer has a solid top border of 3px in black. */
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Selectors Exercise</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      /* Requirement 1: Blue background for page header */
+
+      /* Requirement 2: Font size for h1 in page header */
+
+      /* Requirement 3: Red text for highlighted paragraph */
+
+      /* Requirement 4: Bold font for active list item */
+
+      /* Requirement 5: Italic font for the last paragraph in the main article */
+
+      /* Requirement 6: Grey background for footer */
+
+      /* Requirement 1: Blue background for page header */
+      /* Requirement 1: Blue background for page header */
+      .page-header {
+        background-color: navy;
+      }
+
+      /* Requirement 2: Font size for h1 in page header */
+      .page-header h1 {
+        color: white;
+        text-align: center;
+        font-size: 24px; /* Updated font size to 24px */
+      }
+
+      /* Requirement 3: Red text for highlighted paragraph */
+      .content .highlight {
+        background-color: lightyellow;
+        padding-left: 10px;
+        color: red; /* Added red text color */
+      }
+
+      /* Requirement 4: Italic style for the last paragraph in the main article */
+      #main-article p:last-child {
+        font-style: italic; /* Added italic style */
+      }
+      .sidebar ul > li.active {
+        font-weight: bold;
+      }
+      /* Requirement 5: Grey background for footer */
+      footer {
+        text-align: center;
+        background-color: grey; /* Updated background color to grey */
+      }
+    </style>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Welcome to CSS Selectors Exercise</h1>
+    </header>
+    <section class="content">
+      <article id="main-article">
+        <h2>Article Heading</h2>
+        <p>First paragraph of the article.</p>
+        <p class="highlight">
+          A highlighted paragraph with important information.
+        </p>
+        <p>Last paragraph of the article.</p>
+      </article>
+      <aside class="sidebar">
+        <ul>
+          <li class="active">Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </aside>
+    </section>
+    <footer>
+      <p>Copyright &copy; 2023 by CSS Masters</p>
+    </footer>
+  </body>
+</html>
