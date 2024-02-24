@@ -1,0 +1,12 @@
+useEffect(()=>{
+    fetchData()
+})
+
+const fetchData=async()=>{
+    try{
+const response=await.axios.ger(api.com)
+setData(response.data)
+    }catch(error){
+        console.log("error",error)
+    }
+}
