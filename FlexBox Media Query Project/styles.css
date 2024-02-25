@@ -204,3 +204,16 @@ footer .socials a {
     width: 30%;
   }
 }
+
+/* 
+Mobile: 320px - 480px
+ipads/tablets: 481px - 768px
+small screen/laptops: 769px - 1024px
+Desktops/Large Screens: 1025px - 1200px
+TV/Extra Large Screens: 1201px - 99999999999px
+*/
+
+/* 
+   Mobile First approach
+   Desktop first approach
+*/
